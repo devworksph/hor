@@ -1,0 +1,89 @@
+<div class="wizard-container">
+  <div class="wizard-content column-one">
+    <div class="wizard-details">
+      <h3>House of Representatives</h3>
+
+      <p class="title">Select type of Booking</p>
+      <div class="description">
+        <div class="schedule-selection">
+          <i class="fa-solid fa-location-dot"></i> All - Admission to both museum and library archive
+        </div>
+        <div class="schedule-selection">
+          <i class="fa-regular fa-clock"></i> March 30, 2025 (Tuesday) - 5:30 PM
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wizard-content column-two">
+    <div class="wizard-details">
+      <div class="description overflow">
+        <form [formGroup]="form" class="form">
+          <p-accordion value="0">
+            <p-accordion-panel value="0">
+              <p-accordion-header>Visitors Details</p-accordion-header>
+              <p-accordion-content>
+                <p-iftalabel>
+                  <input pInputText formControlName="lastName" autocomplete="off" />
+                  <label>Last Name</label>
+                </p-iftalabel>
+
+                <p-iftalabel>
+                  <input pInputText formControlName="firstName" autocomplete="off" />
+                  <label>First Name</label>
+                </p-iftalabel>
+
+                <p-iftalabel>
+                  <input pInputText formControlName="middleName" autocomplete="off" />
+                  <label>Middle Name</label>
+                </p-iftalabel>
+
+                <p-iftalabel>
+                  <input pInputText formControlName="status" autocomplete="off" />
+                  <label>Status</label>
+                </p-iftalabel>
+
+                <p-iftalabel>
+                  <input pInputText formControlName="ageRange" autocomplete="off" />
+                  <label>Age Range</label>
+                </p-iftalabel>
+
+                <div class="checkboxes">
+                  <p-checkbox value="yes" />
+                  <label class="ml-2">PWD? (Person with Disability)</label>
+                </div>
+                <div class="checkboxes">
+                  <p-checkbox value="yes"  />
+                  <label class="ml-2">Are you a House Employee?</label>
+                </div>
+              </p-accordion-content>
+            </p-accordion-panel>
+            <p-accordion-panel value="1">
+              <p-accordion-header>Other Details</p-accordion-header>
+              <p-accordion-content>
+                  <p class="m-0">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+                  </p>
+              </p-accordion-content>
+            </p-accordion-panel>
+          </p-accordion>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wizard-content column-threee">
+    <div class="wizard-details">
+      <h4>Identification</h4>
+      <div class="description">
+        <p>Secure your spot and verify your identity--upload a valid ID to proceed with your museum visit registration</p>
+        
+        <p class="uploading-consent">
+          By uploading your valid ID, you agree that your information will be used only for identity verification. We handle all data with strict confidentiality and in compliance with the Philippine Data Privacy Act of 2012. For more details, please review our <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

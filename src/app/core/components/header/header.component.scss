@@ -1,0 +1,27 @@
+@use 'base/media-queries';
+
+:host {
+  .header {
+    background-color: var(--primitive-gray);
+
+    .logo {
+      text-align: center;
+
+      img {
+        width: 184px;
+        height: 93px;
+        padding: 10px;
+      }
+    }
+
+    .bottom-blue {
+      background-color: var(--primitive-blue);
+      height: 10px;
+    }
+
+    .bottom-red {
+      background-color: var(--primitive-red);
+      height: 10px;
+    }
+  }
+}

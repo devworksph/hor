@@ -1,0 +1,69 @@
+<div class="wizard-container">
+  <div class="wizard-content column-one">
+    <div class="wizard-details">
+      <h3>House of Representatives</h3>
+
+      <p class="title">Select type of Booking</p>
+      <div class="description">
+        <div class="schedule-selection">
+          <i class="fa-solid fa-location-dot"></i> All - Admission to both museum and library archive
+        </div>
+        <div class="schedule-selection">
+          <i class="fa-regular fa-clock"></i> March 30, 2025 (Tuesday) - 5:30 PM
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wizard-content column-two">
+    <div class="wizard-details">
+      <h4>Booking Details</h4>
+      <div class="description">
+        <form [formGroup]="form" class="form">
+          <div>
+            <p-iftalabel class="w-full">
+              <p-select
+                [formControlName]="'visitorType'"
+                [options]="visitorType"
+                optionLabel="name"
+                styleClass="w-full"
+              />
+              <label>Select Type of Visitor</label>
+            </p-iftalabel>
+          </div>
+          <div>
+            <p-iftalabel class="w-full">
+              <p-select
+                [formControlName]="'bookingType'"
+                [options]="bookingType"
+                optionLabel="name"
+                styleClass="w-full"
+              />
+              <label>Select Type of Booking</label>
+            </p-iftalabel>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wizard-content column-threee">
+    <div class="wizard-details">
+      <h4>Visitor Details</h4>
+      <div class="description">
+          <form [formGroup]="form" class="form">
+            <div>
+              <p-iftalabel class="w-full">
+                <p-select
+                  [formControlName]="'studentType'"
+                  [options]="studentType"
+                  optionLabel="name"
+                  styleClass="w-full"
+                />
+                <label>Type of Student</label>
+              </p-iftalabel>
+            </div>
+          </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
