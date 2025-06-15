@@ -14,7 +14,9 @@
     "playwright:install": "npx playwright install && npx playwright install-deps",
     "playwright:test": "npx playwright test",
     "build": "ng build && mv -v dist/hor/browser/en/* dist/hor/browser/ && rm -Rf dist/hor/browser/en",
-    "bundle-report": "ng build --configuration=production-sourcemaps && source-map-explorer dist/hor/browser/**/*.js"
+    "bundle-report": "ng build --configuration=production-sourcemaps && source-map-explorer dist/hor/browser/**/*.js",
+    "github-build": "ng build --configuration production --base-href 'https://devworksph.github.io/hor/'",
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/hor/browser/en --no-silent"
   },
   "dependencies": {
     "@angular/animations": "19.2.5",
@@ -54,6 +56,7 @@
     "@typescript-eslint/parser": "8.29.0",
     "@typescript-eslint/types": "8.29.0",
     "@typescript-eslint/utils": "8.29.0",
+    "angular-cli-ghpages": "^2.0.3",
     "angular-eslint": "19.3.0",
     "eslint": "9.23.0",
     "eslint-config-prettier": "10.1.1",

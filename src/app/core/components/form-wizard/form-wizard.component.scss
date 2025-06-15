@@ -114,111 +114,122 @@
       align-content: flex-start;
       flex-direction: row;
 
-        .wizard-content {
-            height: 600px;
-            margin-right: 5px;
-            width: 100%;
+      
+      .p-fileupload-basic {
+          justify-content: left;
+      }
 
-            &.column-one {
-                border-right: 1px solid rgba(26, 26, 26, 0.3);
+      .p-button {
+          background-color: #E6E7EB;
+          border-color: #E6E7EB;
+          color: #A3A3A3;
+      }
 
-                
-            }
+      .wizard-content {
+          height: 600px;
+          margin-right: 5px;
+          width: 100%;
 
-            .wizard-details {
-                padding: 30px;
-                font-family: var(--timesnewroman-font);
+          &.column-one {
+              border-right: 1px solid rgba(26, 26, 26, 0.3);
 
-                h3 {
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: rgba(26, 26, 26, 0.6);
-                }
+              
+          }
 
-                h4 {
-                    font-size: 20px;
-                    font-weight: 700;
-                    margin-bottom: 30px;
-                }
+          .wizard-details {
+              padding: 30px;
+              font-family: var(--timesnewroman-font);
 
-                .title {
-                    font-size: 28px;
-                    font-weight: 700;
-                    margin-top: 10px;
-                    margin-bottom: 35px;
-                }
-
-                .description {
-                    font-family: var(--proximanova-reg-font);
-
-                    &.overflow {
-                      height: 480px;
-                      overflow: auto;
-                    }
-
-                    .form {
-                        font-size: 14px;
-
-                        div {
-                            margin-bottom: 10px;
-                        }
-
-                        .label {
-                            margin-left: 10px;
-                        }
-                    }
-
-                    .schedule-selection {
-                      margin-bottom: 15px;
-                      color: var(--primitive-black-2);
-                      font-weight: 700;
-
-                      i {
-                        margin-right: 5px;
-                      }
-                    }
-
-                    .checkboxes {
-                      display: flex;
-
-                      label {
-                        padding-top: 2px;
-                        margin-left: 8px;
-                      }
-                    }
-
-                    .or {
-                      text-align: center;
-                      vertical-align: bottom;
-                      line-height: 20px;
-                    }
-
-                    .small {
-                      font-size: 12px;
-                    }
-                }
-
-                .detail-field {
-                  font-weight: 700;
-                  font-family: var(--proximanova-reg-font), sans-serif;
-                  color: var(--primitive-black-1)
-                }
-
-                .detail-value {
-                  font-family: var(--proximanova-reg-font), sans-serif;
-                  color: var(--primitive-black-1)
-                }
-
-                
-
-            }
-
-            &.column-two {
-              .wizard-details {
-                  padding: 30px 15px;
+              h3 {
+                  font-size: 18px;
+                  font-weight: 400;
+                  color: rgba(26, 26, 26, 0.6);
               }
+
+              h4 {
+                  font-size: 20px;
+                  font-weight: 700;
+                  margin-bottom: 30px;
+              }
+
+              .title {
+                  font-size: 28px;
+                  font-weight: 700;
+                  margin-top: 10px;
+                  margin-bottom: 35px;
+              }
+
+              .description {
+                  font-family: var(--proximanova-reg-font);
+
+                  &.overflow {
+                    height: 480px;
+                    overflow: auto;
+                  }
+
+                  .form {
+                      font-size: 14px;
+
+                      div {
+                          margin-bottom: 10px;
+                      }
+
+                      .label {
+                          margin-left: 10px;
+                      }
+                  }
+
+                  .schedule-selection {
+                    margin-bottom: 15px;
+                    color: var(--primitive-black-2);
+                    font-weight: 700;
+
+                    i {
+                      margin-right: 5px;
+                    }
+                  }
+
+                  .checkboxes {
+                    display: flex;
+
+                    label {
+                      padding-top: 2px;
+                      margin-left: 8px;
+                    }
+                  }
+
+                  .or {
+                    text-align: center;
+                    vertical-align: bottom;
+                    line-height: 20px;
+                  }
+
+                  .small {
+                    font-size: 12px;
+                  }
+              }
+
+              .detail-field {
+                font-weight: 700;
+                font-family: var(--proximanova-reg-font), sans-serif;
+                color: var(--primitive-black-1)
+              }
+
+              .detail-value {
+                font-family: var(--proximanova-reg-font), sans-serif;
+                color: var(--primitive-black-1)
+              }
+
+              
+
+          }
+
+          &.column-two {
+            .wizard-details {
+                padding: 30px 15px;
             }
-        }
+          }
+      }
     }
 
     .wizard-action {

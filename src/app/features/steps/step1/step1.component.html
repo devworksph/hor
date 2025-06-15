@@ -11,25 +11,59 @@
   </div>
   <div class="wizard-content column-two">
     <div class="wizard-details">
-      <h4>Select Location</h4>
-      <div class="description">
-        <p>What are you visiting? Let us help you filter available dates for your agenda.</p>
-        <form [formGroup]="form" class="form">
-          <div>
-            <input type="radio" value="all" formControlName="location">
-            <label class="label">All - Admission to both museum and library archive</label>
-          </div>
-          <div>
-            <input type="radio" value="Legislative Museum" formControlName="location">
-            <label class="label">Legislative Museum only</label>
-          </div>
-          <div>
-            <input type="radio" value="Library Archives" formControlName="location">
-            <label class="label">Library Archives for Research only</label>
-          </div>
-        </form>
-      </div>
+      <form [formGroup]="form" class="form">
+        <h4>Select Location</h4>
+        <div class="description">
+          <p>What are you visiting? Let us help you filter available dates for your agenda.</p>
+          
+            <div>
+              <input type="radio" value="all" formControlName="location">
+              <label class="label">All - Admission to both museum and library archive</label>
+            </div>
+            <div>
+              <input type="radio" value="Legislative Museum" formControlName="location">
+              <label class="label">Legislative Museum only</label>
+            </div>
+            <div>
+              <input type="radio" value="Library Archives" formControlName="location">
+              <label class="label">Library Archives for Research only</label>
+            </div>
+        </div>
+
+        <h4>Select Date</h4>
+        <div class="calendar">
+          <p-datepicker class="max-w-full" formControlName="date" [inline]="true" [showWeek]="true" />
+        </div>
+      </form>
     </div>
   </div>
-  <div class="wizard-content column-threee"></div>
+  <div class="wizard-content column-threee">
+    <div class="wizard-details">
+      <h4>Select Time</h4>
+      <form [formGroup]="form" class="form">
+        <div class="time-slots">
+          <div>
+            <input type="radio" value="1" formControlName="timeSlot">
+            <label class="label">01:00 PM</label>
+          </div>
+          <div>
+            <input type="radio" value="2" formControlName="timeSlot">
+            <label class="label">02:00 PM (29 slots left)</label>
+          </div>
+          <div>
+            <input type="radio" value="3" formControlName="timeSlot">
+            <label class="label">03:00 PM (6 slots left)</label>
+          </div>
+          <div>
+            <input type="radio" value="4" formControlName="timeSlot">
+            <label class="label">04:00 PM (20 slots left)</label>
+          </div>
+          <div>
+            <input type="radio" value="5" formControlName="timeSlot">
+            <label class="label">05:00 PM</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
